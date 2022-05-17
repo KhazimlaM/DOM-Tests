@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+</head>
+<body>
+   <style>
+   .heading {
+       text-align: center;
+   }
+   </style>
+
+     <h1 class="heading">Mocha Tests</h1>
+    <!-- -->
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+     <!-- the function to be tested -->
+     <script src="settings-bill.js" charset="utf-8"></script>
+     <!-- followed by the tests -->
+     <script src="test/settings-bill-tests.js" charset="utf-8"></script>
+     
+    
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+ 
+     
+</body>
+</html>

@@ -1,5 +1,5 @@
 describe("The bill with settings factory function" , function(){
-  it('should be able to set the call cost' , function(){
+  it('it should be able to set the call cost' , function(){
     let settingsBill = billWIthSettings();
 
       settingsBill.setCallCost(1.85);
@@ -10,7 +10,7 @@ describe("The bill with settings factory function" , function(){
       assert.equal(2.75, settingsBill2.getCallCost());
   });
 
-  it('should be able to set the sms cost' , function(){
+  it(' it should be able to set the sms cost' , function(){
     let settingsBill = billWIthSettings();
     settingsBill.setSmsCost(0.85);
       assert.equal(0.85, settingsBill.getSmsCost());
@@ -20,7 +20,7 @@ describe("The bill with settings factory function" , function(){
       assert.equal(0.75, settingsBill2.getSmsCost());
   });
 
-  it('should be able to set the sms cost and call cost' , function(){
+  it('it should be able to set the sms cost and call cost' , function(){
     let settingsBill = billWIthSettings();
     settingsBill.setCallCost(2.75)
     settingsBill.setSmsCost(0.85)
@@ -37,7 +37,7 @@ describe("The bill with settings factory function" , function(){
 
   });
 
-  it('should be able to set the warning level' , function(){
+  it('it should be able to set the warning level' , function(){
     let settingsBill = billWIthSettings();
     settingsBill.setWarningLevel(20)
       assert.equal(20, settingsBill.getWarningLevel());
@@ -45,14 +45,14 @@ describe("The bill with settings factory function" , function(){
   });
 
 
-  it('should be able to set the critical level' , function(){
+  it('it should be able to set the critical level' , function(){
     let settingsBill = billWIthSettings();
     settingsBill.setCriticalLevel(30)
       assert.equal(30, settingsBill.getCriticalLevel());
 
   });
 
-  it('should be able to set the warning level & critical level' , function(){
+  it('it should be able to set the warning level & critical level' , function(){
     let settingsBill = billWIthSettings();
 
     settingsBill.setWarningLevel(15)

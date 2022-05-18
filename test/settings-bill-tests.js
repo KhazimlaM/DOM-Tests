@@ -66,7 +66,7 @@ describe("The bill with settings factory function" , function(){
 });
 
 describe("use values" , function(){
-  it('should be able to use the call cost set', function(){
+  it('it should be able to use the call cost set', function(){
     let settingsBill = billWIthSettings();
 
     settingsBill.setCallCost(2.25);
@@ -82,7 +82,7 @@ describe("use values" , function(){
 
   });
 
-  it("should be able to use the sms cost set for two sms's at 1.35 each", function(){
+  it("it should be able to use the sms cost set for two sms's at 1.35 each", function(){
     let settingsBill = billWIthSettings();
 
     settingsBill.setSmsCost(0.85);
@@ -100,7 +100,7 @@ describe("use values" , function(){
 
   });
 
-  it("should be able to use sms and call set for two sms's at 0.85 each and three calls at 1.35 each" , function(){
+  it("it should be able to use sms and call set for two sms's at 0.85 each and three calls at 1.35 each" , function(){
     let settingsBill = billWIthSettings();
 
     settingsBill.setSmsCost(0.85);
@@ -145,7 +145,7 @@ describe("warning and critical level" , function(){
 
   });
 
-  it("should return a class name of 'critical' if critical level is reached " , function(){
+  it("it should return a class name of 'critical' if critical level is reached " , function(){
     let settingsBill = billWIthSettings();
 
     settingsBill.setCallCost(2.50);
@@ -166,7 +166,7 @@ describe("warning and critical level" , function(){
 
    });
 
-   it("should stop the total cost from increasing if the critical level has been reached" , function(){
+   it("it should stop the total cost from increasing if the critical level has been reached" , function(){
     let settingsBill = billWIthSettings();
 
     settingsBill.setCallCost(2.50);
@@ -186,7 +186,7 @@ describe("warning and critical level" , function(){
 
    });
 
-   it("should allow total increase when critical level is updated" , function(){
+   it("it should allow total increase when critical level is updated" , function(){
     let settingsBill = billWIthSettings();
 
     settingsBill.setCallCost(2.50);
